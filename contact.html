@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <script src="https://use.fontawesome.com/a852d6f662.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav>
+        <div class="display-md">
+            <a class="navigation-link" href="/index.html">Home</a>
+
+            <a class="navigation-link" href="/about.html">About</a>
+
+            <a class="navigation-link active" href="/contact.html">Contact</a>
+
+            <a class="navigation-link" href="/gallery.html">Gallery</a>
+        </div>
+
+        <div class="display-md-none">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="display-md-none list-unstyled navigation collapsed">
+
+            <li>
+                <a class="navigation-link" href="/index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="navigation-link" href="/about.html">About</a>
+            </li>
+
+            <li>
+                <a class="navigation-link" href="/contact.html">Contact</a>
+            </li>
+
+            <li>
+                <a class="navigation-link" href="/gallery.html">Gallery</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <section class="" id="contact">
+
+        <header class="header">
+            <h1 class="spreaded-text">Contact Me</h1>
+        </header>
+
+        <div class="section-info">
+            <h2 class=""> Reach Out To Me </h2>
+
+            <div class="grid">
+                <!-- <div class="row"> -->
+                <div class="col">
+                    <div class="translucent-tile">
+                        <i class="fa fa-phone"></i>
+                        +91 85700 95681
+                    </div>
+                    <div class="translucent-tile">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:vivek.jain@zemosolabs@gmail.com" target="_blank">
+                            vivek.jain@zemosolabs.com
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="col">
+                    <div class="wrapper">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" />
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5">Hi, great work !!</textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <input id="submit-button" type="submit" value="Submit" onsubmit=submitForm />
+                        </div>
+                    </div>
+                </form>
+                <!-- </div> -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <script src="./JS/dropdown-menu.js"></script>
+        <script src="./JS/submit-form.js"></script>
+    </footer>
+</body>
+
+</html>
