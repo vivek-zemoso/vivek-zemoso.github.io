@@ -1,0 +1,36 @@
+.random-images-grid {
+  display: flex;
+  margin: 0 -20px;
+  flex-wrap: wrap;
+}
+
+.image-wrapper-row {
+  width: 100%;
+  justify-content: center;
+}
+
+.image-wrapper-col {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.image-wrapper-col img {
+  max-width: 100%;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+@media all and (min-width: 600px) {
+  .image-wrapper-col {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .image-wrapper-col {
+    width: 45%;
+  }
+}

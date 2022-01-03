@@ -1,0 +1,103 @@
+.grid {
+  display: flex;
+  margin: 0 -20px;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 100%;
+  justify-content: center;
+}
+
+.col {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.col img {
+  max-width: 100%;
+}
+
+.translucent-tile {
+  background-color: rgba(255, 255, 255, 0.4);
+  min-height: 6rem;
+  min-width: max-content;
+  margin: 1rem 0.5rem;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 3rem 0.5rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.translucent-tile a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.translucent-tile a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 1.2rem 0;
+}
+
+.form-row {
+  min-height: 4rem;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-row > label {
+  width: 250px;
+  margin-right: 100px;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.form-row > input,
+.form-row > textarea {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  min-width: 30rem;
+  border: none;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit-button {
+  height: 3rem;
+  box-sizing: border-box;
+  background-color: hsla(209, 59%, 12%, 1);
+  color: #fff;
+  padding: 0 4rem;
+}
+
+#submit-button:hover {
+  color: hsla(209, 59%, 12%, 1);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media all and (min-width: 950px) {
+  .col {
+    width: 45%;
+  }
+
+  .form-row {
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+
+  .form-row > input,
+  .form-row > textarea {
+    min-width: 25rem;
+  }
+}
