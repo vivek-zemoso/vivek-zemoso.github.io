@@ -9,8 +9,8 @@ let feilds = [feild_name, feild_url, feild_info, feild_date];
 
 feild_date.max = new Date().toISOString().split("T")[0];
 
-// const server_url = 'http://localhost:5000';
-const server_url = 'https://my-json-server.typicode.com/vivek-zemoso/fakeserver';
+const server_url = 'http://localhost:5000';
+// const server_url = 'https://my-json-server.typicode.com/vivek-zemoso/fakeserver';
 let method = 'POST';
 let feild_id = -1;
 

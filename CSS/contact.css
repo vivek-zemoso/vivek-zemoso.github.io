@@ -76,8 +76,8 @@
 }
 
 .error-msg {
-  color: rgb(255, 41, 41);
-  font-size: 0.9rem;
+  color: rgb(255, 255, 0);
+  font-size: 1rem;
   text-transform: capitalize;
   padding-left: 0.5rem;
 }
@@ -113,31 +113,31 @@
   }
 
   .form-row {
-    padding-left: 50px;
+    padding-left: 5px;
     padding-bottom: 5px;
     display: flex;
     min-height: auto;
   }
 
   .form-row > label {
-    width: 30%;
+    width: 20%;
     vertical-align: middle;
     margin-bottom: 0;
   }
 
   .form-row > input,
   .form-row > textarea {
-    width: 65%;
+    width: 75%;
     margin-top: 0;
   }
 
   .error-msg {
-    width: 65%;
-    margin-left: 35%;
-    padding-left: 0;
+    width: 75%;
+    margin-left: 20%;
+    padding-left: 5px;
   }
 
   #submit-button {
-    margin-left: 30%;
+    margin-left: 20%;
   }
 }
