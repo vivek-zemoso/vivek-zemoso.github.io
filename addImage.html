@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/addImage.css">
+    <script src="https://use.fontawesome.com/a852d6f662.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="display-md">
+
+            <a class="navigation-link active" href="/index.html">Home</a>
+
+            <a class="navigation-link" href="/about.html">About</a>
+
+            <a class="navigation-link" href="/contact.html">Contact</a>
+
+            <a class="navigation-link" href="/gallery.html">Gallery</a>
+        </div>
+
+        <div class="display-md-none">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="display-md-none list-unstyled navigation collapsed">
+
+            <li>
+                <a class="navigation-link" href="/index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="navigation-link" href="/about.html">About</a>
+            </li>
+
+            <li>
+                <a class="navigation-link" href="/contact.html">Contact</a>
+            </li>
+
+            <li>
+                <a class="navigation-link" href="/gallery.html">Gallery</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <section class="" id="index">
+
+        <header class="header">
+            <h1 class="spreaded-text">Add New Photo</h1>
+        </header>
+
+        <div class="section-info">
+            <div class="grid">
+
+                <form id="addPhoto-form" class="col" novalidate>
+                    <div class="wrapper">
+                        <div class="form-row-wrapper" id="name-form-row">
+                            <div class="form-row">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required />
+                            </div>
+                            <div id="name-error" class="error-msg"></div>
+                        </div>
+
+                        <div class="form-row-wrapper" id="url-form-row">
+                            <div class="form-row">
+                                <label for="url">URL</label>
+                                <input type="url" id="url" name="url" required />
+                            </div>
+                            <div id="url-error" class="error-msg"></div>
+                        </div>
+
+                        <div class="form-row-wrapper" id="info-form-row">
+                            <div class="form-row">
+                                <label for="info">Information</label>
+                                <textarea name="info" id="info" rows="5"></textarea>
+                            </div>
+                            <div id="info-error" class="error-msg"></div>
+                        </div>
+
+                        <div class="form-row-wrapper" id="date-form-row">
+                            <div class="form-row">
+                                <label for="date">Upload Date</label>
+                                <input type="date" id="date" name="date" required />
+                            </div>
+                            <div id="date-error" class="error-msg"></div>
+                        </div>
+
+                        <div class="form-row" id="submit-form-row">
+                            <input id="submit-button" type="submit" value="Submit" onsubmit=submitForm />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <script src="./JS/dropdown-menu.js"></script>
+        <script type="module" src="./JS/addImage.mjs"></script>
+    </footer>
+</body>
+
+</html>

@@ -1,3 +1,8 @@
+:root {
+  --theme-color: #fff;
+  --theme-bg-color: hsl(203, 78%, 16%);
+}
+
 .random-images-grid {
   display: flex;
   margin: 0 -20px;
@@ -11,26 +16,102 @@
 
 .image-wrapper-col {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 .image-wrapper-col img {
   max-width: 100%;
+  min-height: 250px;
 }
 
 .white-bg {
   background-color: #fff;
 }
 
+.buttons {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 5px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.buttons .big-button {
+  min-height: 50px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.theme-bw {
+  background-color: var(--theme-bg-color);
+  color: var(--theme-color);
+  transition: all 400ms;
+}
+
+.theme-bw:hover {
+  background-color: var(--theme-color);
+  color: var(--theme-bg-color);
+  transition: all 400ms;
+}
+
+.invert-theme-bw {
+  background-color: var(--theme-color);
+  color: var(--theme-bg-color);
+  transition: all 400ms;
+}
+
+.invert-theme-bw:hover {
+  background-color: var(--theme-bg-color);
+  color: var(--theme-color);
+  transition: all 400ms;
+}
+
 @media all and (min-width: 600px) {
   .image-wrapper-col {
-    width: 40%;
+    width: 65%;
+    margin: auto;
+  }
+
+  .buttons .big-button {
+    width: 60%;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .image-wrapper-col {
+    width: 48%;
+    margin: auto;
   }
 }
 
 @media all and (min-width: 900px) {
+  .random-images-grid {
+    text-align: left;
+  }
+
   .image-wrapper-col {
-    width: 45%;
+    width: 32%;
+    text-align: left;
+    margin: 1rem 0;
+  }
+
+  .buttons button {
+    width: 35%;
+    margin: 5px;
+  }
+
+  .buttons .big-button {
+    width: 40%;
+    margin: 0 auto 2rem;
   }
 }
