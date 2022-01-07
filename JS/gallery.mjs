@@ -1,5 +1,5 @@
-const server_url = 'http://localhost:5000';
-// const server_url = 'https://my-json-server.typicode.com/vivek-zemoso/fakeserver';
+// const server_url = 'http://localhost:5000';
+const server_url = 'https://my-json-server.typicode.com/vivek-zemoso/fakeserver';
 
 const fetchImages = async () => {
     const response = await fetch(`${server_url}/images`);
